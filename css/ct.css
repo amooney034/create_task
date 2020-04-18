@@ -1,6 +1,7 @@
 h1 {
   text-align: center;
-  text-shadow: 2px 2px #0000FF;
+  text-shadow: 3px 3px #0000CD;
+	color: red;
 }
 
 h2 {
@@ -17,7 +18,7 @@ h3 {
 
 h4 {
   text-align: center;
-  color: blue;
+  color: red;
 }
 
 body {
@@ -35,3 +36,4 @@ canvas {
   margin-left: auto;
   margin-right: auto;
 }
+
