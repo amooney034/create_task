@@ -11,6 +11,11 @@ body {
   background-color: lightblue;
 }
 
+p {
+  text-align: center;
+  font-family: "Comic Sans MS"
+}
+
 #game {
   border-radius: 50px;
 }
