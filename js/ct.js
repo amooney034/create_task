@@ -29,7 +29,7 @@ var ctx = canvas.getContext("2d");
 
 	function net() {
 		ctx.beginPath();
-		ctx.rect(300, 220, 5, 10);
+		ctx.rect(300, 200, 5, 10);
 		ctx.fillStyle = "white";
 		ctx.fill();
 		ctx.closePath();
