@@ -3,7 +3,7 @@ var ctx = canvas.getContext("2d");
 
 	function drawBall() {
 		ctx.beginPath();
-		ctx.arc(303, 200, 8, 0, Math.PI*2);
+		ctx.arc(300, 200, 8, 0, Math.PI*2);
 		ctx.fillStyle = "white";
 		ctx.fill();
 		ctx.closePath();
@@ -29,12 +29,14 @@ var ctx = canvas.getContext("2d");
 
 
 	function drawNet() {
+		ctx.lineWidth = 5;
+		ctx.strokeStyle = "#FFFFFF";
 		ctx.beginPath();
-		ctx.rect(300, 220, 5, 10);
-		ctx.fillStyle = "white";
-		ctx.fill();
-		ctx.closePath();
-}
+		ctx.setLineDash([20, 25]);
+		ctx.moveTo(300, 10);
+		ctx.lineTo(300, 590);
+		ctx.stroke();
+	}
 
 drawBall();
 drawPone();
