@@ -38,3 +38,15 @@ canvas {
   margin-left: auto;
   margin-right: auto;
 }
+
+button {
+  font-family: "Comic Sans MS";
+  background-color: black;
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+}
