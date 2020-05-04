@@ -4,29 +4,16 @@ h1 {
 	color: yellow;
 }
 
-h2 {
-  text-align: center;
-  font-family: "Comic Sans MS"
-}
-
-
 h3 {
   text-align: center;
   font-family: "Comic Sans MS"
-}
-
-
-h4 {
-  text-align: center;
-  color: red;
-  text-shadow: 1px 1px black;
 }
 
 body {
   background-color: lightblue;
 }
 
-#game {
+#colorboard {
   border-radius: 50px;
 }
 
@@ -37,16 +24,4 @@ canvas {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-}
-
-button {
-  font-family: "Comic Sans MS";
-  background-color: black;
-  color: white;
-  display: block;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 30px;
 }
