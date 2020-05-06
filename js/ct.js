@@ -8,10 +8,10 @@ if ((red_color > max) || (red_color < min) || (red_color % 1 !=0) || (Number.isN
   window.alert("Something is off with your red value.");
 }
 
-if ((blue_color > max) || (blue_color < min) || (blue_color % 1 !=0) || (Number.isNaN (blue_color))) {
+else if ((blue_color > max) || (blue_color < min) || (blue_color % 1 !=0) || (Number.isNaN (blue_color))) {
   window.alert("Something is off with your blue value.");
 }
 
-if ((green_color > max) || (green_color < min) || (green_color % 1 !=0) || (Number.isNaN (green_color))) {
+else if ((green_color > max) || (green_color < min) || (green_color % 1 !=0) || (Number.isNaN(green_color))) {
   window.alert("Something is off with your green value.");
 }
