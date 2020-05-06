@@ -1,10 +1,10 @@
-h1 {
+ h1 {
   text-align: center;
-  text-shadow: 2px 2px #0000CD;
-	color: ;
+  text-shadow: 3px 3px #0000CD;
+	color: yellow;
 }
 
-h3, h2 {
+h3 {
   text-align: center;
   font-family: "Comic Sans MS"
 }
@@ -25,24 +25,3 @@ canvas {
   margin-left: auto;
   margin-right: auto;
 }
-
-input {
-  display: block;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-button {
-  display: block;
-  margin-bottom: 20px;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
- table {
-    margin-left:auto; 
-    margin-right:auto;
-  }
