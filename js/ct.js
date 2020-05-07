@@ -21,3 +21,23 @@ if (Number.isNaN (red_color) || Number.isNaN (blue_color) || Number.isNaN (green
   blue_color === 0;
   green_color === 0;
 }
+
+var red_binary;
+var blue_binary;
+var green_binary;
+
+function binary_converter() {
+red_color = Number(red_color);
+red_binary = red_color.toString(2);
+
+blue_color = Number(blue_color);
+blue_binary = blue_color.toString(2);
+
+green_color = Number(green_color);
+green_binary = green_color.toString(2);
+window.alert(red_binary);
+}
+binary_converter();
+
+var hex = parseInt(red_binary, 2).toString(16).toUpperCase();
+window.alert(hex);
