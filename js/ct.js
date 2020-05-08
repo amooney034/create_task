@@ -39,7 +39,7 @@ var hex = parseInt(red_binary, 2).toString(16).toUpperCase();
 var hexa = parseInt(blue_binary, 2).toString(16).toUpperCase();
 var hexad = parseInt(green_binary, 2).toString(16).toUpperCase();
 
-if (hex < 10 || hexa < 10 || hexad) {
+if (hex < 10 || hexa < 10 || hexad < 10) {
   var last_red = 0+hex;
   var last_blue = 0+hexa;
   var last_green = 0+hexad;
