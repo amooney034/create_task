@@ -39,12 +39,7 @@ var hex = parseInt(red_binary, 2).toString(16).toUpperCase();
 var hexa = parseInt(blue_binary, 2).toString(16).toUpperCase();
 var hexad = parseInt(green_binary, 2).toString(16).toUpperCase();
 
-if (hex < 10 || hexa < 10 || hexad < 10) {
-  var last_red = 0+hex;
-  var last_blue = 0+hexa;
-  var last_green = 0+hexad;
-}
-var final_color = last_red + last_blue + last_green;
+var final_color = hex + hexa + hexad;
 if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.isNaN (red_color)) || (blue_color > max) || (blue_color < min) || (blue_color % 1 !==0) || (Number.isNaN (blue_color)) || (green_color > max) || (green_color < min) || (green_color % 1 !=0) || (Number.isNaN (green_color))) {
   window.alert("Invalid inputs.");
   }
