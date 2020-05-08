@@ -45,13 +45,13 @@ var hex = parseInt(red_binary, 2).toString(16).toUpperCase();
 var hexa = parseInt(blue_binary, 2).toString(16).toUpperCase();
 var hexad = parseInt(green_binary, 2).toString(16).toUpperCase();
 
-if (red_color < 16 && hex < 10) {
+if (red_color < 16) {
   var hex = 0+hex;
 }
-if (blue_color < 16 && hexa < 10) {
+if (blue_color < 16) {
   var hexa = 0+hexa;
 }
-if (green_color < 16 && hexad < 10) {
+if (green_color < 16) {
   var hexad = 0+hexad;
 }
 else {
