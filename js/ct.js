@@ -1,3 +1,5 @@
+var canvas = document.getElementById("colorboard");
+var ctx = canvas.getContext("2d");
 var min = 0;
 var max = 255; 
 var red_binary;
@@ -68,3 +70,9 @@ else {
 }
 }
 finale();
+
+function fillCanvas() {
+  ctx.fillCanvas = final_color;
+}
+
+fillCanvas();
