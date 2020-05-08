@@ -48,6 +48,11 @@ if (blue_color < 16) {
 if (green_color < 16) {
   var green_final = 0+hexad;
 }
+else {
+  red_final = hex;
+  blue_final = hexa;
+  green_final = hexad;
+}
 
 var final_color = red_final + blue_final + green_final;
 if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.isNaN (red_color)) || (blue_color > max) || (blue_color < min) || (blue_color % 1 !==0) || (Number.isNaN (blue_color)) || (green_color > max) || (green_color < min) || (green_color % 1 !=0) || (Number.isNaN (green_color))) {
