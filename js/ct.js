@@ -69,4 +69,3 @@ else {
 }
 }
 finale();
-finale();
