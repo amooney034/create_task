@@ -7,6 +7,8 @@ var red_color = window.prompt("Enter the red value integer 0-255");
 var blue_color = window.prompt("Enter the blue value  integer 0-255");
 var green_color = window.prompt("Enter the green value integer 0-255");
 
+
+
 function checker() {
 if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.isNaN (red_color))) {
   window.alert("Something is off with your red value.");
@@ -22,6 +24,8 @@ if ((green_color > max) || (green_color < min) || (green_color % 1 !=0) || (Numb
 }
 checker();
 
+
+
 function binary_converter() {
 red_color = Number(red_color);
 red_binary = red_color.toString(2);
@@ -34,29 +38,30 @@ green_binary = green_color.toString(2);
 }
 binary_converter();
 
+
+
 function finale() {
 var hex = parseInt(red_binary, 2).toString(16).toUpperCase();
 var hexa = parseInt(blue_binary, 2).toString(16).toUpperCase();
 var hexad = parseInt(green_binary, 2).toString(16).toUpperCase();
 
-if (red_color < 16) {
-  var red_final = 0+hex;
+if (red_color < 16 && hex < 10) {
+  var hex = 0+hex;
 }
-if (blue_color < 16) {
-  var blue_final = 0+hexa;
+if (blue_color < 16 && hexa < 10) {
+  var hexa = 0+hexa;
 }
-if (green_color < 16) {
-  var green_final = 0+hexad;
+if (green_color < 16 && hexad < 10) {
+  var hexad = 0+hexad;
 }
 else {
-  red_final = hex;
-  blue_final = hexa;
-  green_final = hexad;
+  hex = hex;
+  hexa = hexa;
+  hexad = hexad;
 }
-
-var final_color = red_final + blue_final + green_final;
+var final_color = hex + hexa + hexad;
 if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.isNaN (red_color)) || (blue_color > max) || (blue_color < min) || (blue_color % 1 !==0) || (Number.isNaN (blue_color)) || (green_color > max) || (green_color < min) || (green_color % 1 !=0) || (Number.isNaN (green_color))) {
-  window.alert("Invalid inputs.");
+  window.alert("Invalid input(s).");
   }
 else {
   window.alert(final_color);
