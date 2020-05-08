@@ -1,9 +1,14 @@
+var canvas = document.getElementById("colorboard");
+var ctx = canvas.getContext("2d");
 var min = 0;
 var max = 255; 
 var red_binary;
 var blue_binary;
 var green_binary;
+
+function prompt() {
 var red_color = window.prompt("Enter the red value integer 0-255");
+}
 var blue_color = window.prompt("Enter the blue value  integer 0-255");
 var green_color = window.prompt("Enter the green value integer 0-255");
 
@@ -68,3 +73,9 @@ else {
 }
 }
 finale();
+
+function fillCanvas() {
+  ctx.fillCanvas = final_color;
+}
+
+fillCanvas();
