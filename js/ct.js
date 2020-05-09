@@ -41,7 +41,6 @@ blue_binary = blue_color.toString(2);
 binary_converter();
 
 
-function finale() {
 var hex = parseInt(red_binary, 2).toString(16).toUpperCase();
 var hexa = parseInt(green_binary, 2).toString(16).toUpperCase();
 var hexad = parseInt(blue_binary, 2).toString(16).toUpperCase();
@@ -67,8 +66,6 @@ if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.is
 else {
   window.alert(final_color);
 }
-}
-finale();
 
 ctx.fillStyle = "white"; //filler color
 ctx.fillRect(0, 0, canvas.width, canvas.height);
