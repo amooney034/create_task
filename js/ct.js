@@ -5,10 +5,10 @@ var max = 255;
 var red_binary;
 var green_binary;
 var blue_binary;
+var last_color;
 var red_color = window.prompt("Enter the red value integer 0-255");
 var green_color = window.prompt("Enter the green value integer 0-255");
-var blue_color = window.prompt("Enter the blue value  integer 0-255");
-
+var blue_color = window.prompt("Enter the blue value integer 0-255");
 
 
 function checker() {
@@ -41,6 +41,7 @@ blue_binary = blue_color.toString(2);
 binary_converter();
 
 
+function getColor() {
 var hex = parseInt(red_binary, 2).toString(16).toUpperCase();
 var hexa = parseInt(green_binary, 2).toString(16).toUpperCase();
 var hexad = parseInt(blue_binary, 2).toString(16).toUpperCase();
@@ -64,8 +65,15 @@ if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.is
   window.alert("Invalid input(s).");
   }
 else {
-  window.alert(final_color);
+  window.alert("#" + final_color + "  COPY THE HEXADECIMAL!" );
 }
-
-ctx.fillStyle = "white"; //filler color
+if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.isNaN (red_color)) || (green_color > max) || (green_color < min) || (green_color % 1 !=0) || (Number.isNaN (green_color)) || (blue_color > max) || (blue_color < min) || (blue_color % 1 !==0) || (Number.isNaN (blue_color))) {
+	window.alert("You MUST enter an integer between 0-255");
+}
+else {
+var last_color = window.prompt("Paste the color code");
+ctx.fillStyle = last_color;
 ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+}
+getColor();
