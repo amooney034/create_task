@@ -68,6 +68,7 @@ else {
   window.alert(final_color);
 }
 }
+finale();
 
 ctx.fillStyle = "white"; //filler color
 ctx.fillRect(0, 0, canvas.width, canvas.height);
