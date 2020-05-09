@@ -5,7 +5,6 @@ var max = 255;
 var red_binary;
 var green_binary;
 var blue_binary;
-var final_color;
 var red_color = window.prompt("Enter the red value integer 0-255");
 var green_color = window.prompt("Enter the green value integer 0-255");
 var blue_color = window.prompt("Enter the blue value  integer 0-255");
@@ -42,7 +41,6 @@ blue_binary = blue_color.toString(2);
 binary_converter();
 
 
-
 function finale() {
 var hex = parseInt(red_binary, 2).toString(16).toUpperCase();
 var hexa = parseInt(green_binary, 2).toString(16).toUpperCase();
@@ -70,4 +68,6 @@ else {
   window.alert(final_color);
 }
 }
-finale();
+
+ctx.fillStyle = "white"; //filler color
+ctx.fillRect(0, 0, canvas.width, canvas.height);
