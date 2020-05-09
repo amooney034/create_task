@@ -65,7 +65,7 @@ if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.is
   window.alert("Invalid input(s).");
   }
 else {
-  window.alert("#" + final_color + "  COPY THE HEXADECIMAL!" );
+  window.alert("#" + final_color + " COPY THE HEXADECIMAL FOR THE CANVAS!" );
 }
 if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.isNaN (red_color)) || (green_color > max) || (green_color < min) || (green_color % 1 !=0) || (Number.isNaN (green_color)) || (blue_color > max) || (blue_color < min) || (blue_color % 1 !==0) || (Number.isNaN (blue_color))) {
 	window.alert("You MUST enter an integer between 0-255");
@@ -77,3 +77,33 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 }
 getColor();
+
+function changeBackground() {
+var first = parseInt(red_binary, 2).toString(16).toUpperCase();
+var second = parseInt(green_binary, 2).toString(16).toUpperCase();
+var third = parseInt(blue_binary, 2).toString(16).toUpperCase();
+
+if (red_color < 16) {
+  var first = 0+first;
+}
+if (green_color < 16) {
+  var second = 0+second;
+}
+if (blue_color < 16) {
+  var third = 0+third;
+}
+else {
+  first = first;
+  second = second;
+  third = third;
+}
+var switch_color = third + second + first;
+if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.isNaN (red_color)) || (green_color > max) || (green_color < min) || (green_color % 1 !=0) || (Number.isNaN (green_color)) || (blue_color > max) || (blue_color < min) || (blue_color % 1 !==0) || (Number.isNaN (blue_color))) {
+}
+else {
+var switchy = window.alert("#" + switch_color + " COPY THE HEXADECIMAL FOR THE BACKGROUND");
+var inverse_color = window.prompt("Paste the NEW color code");
+document.body.style.background = inverse_color;
+}
+}
+changeBackground();
