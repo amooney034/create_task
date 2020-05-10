@@ -1,3 +1,4 @@
+//Variables by Aidan and Afonso
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 var min = 0;
@@ -11,7 +12,7 @@ var green_color = window.prompt("Enter the green value integer 0-255");
 var blue_color = window.prompt("Enter the blue value integer 0-255");
 
 
-function checker() {
+function checker() { //Afonso and O
 if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.isNaN (red_color))) {
   window.alert("Something is off with your red value.");
 }
@@ -28,24 +29,22 @@ checker();
 
 
 
-function binary_converter() {
-red_color = Number(red_color);
+function binary_converter() { //Afonso and O
+red_color = Number(red_color); //Afonso and ☐
 red_binary = red_color.toString(2);
 
-green_color = Number(green_color);
+green_color = Number(green_color); //Afonso and ☐
 green_binary = green_color.toString(2);
 
-blue_color = Number(blue_color);
+blue_color = Number(blue_color); //Afonso and ☐
 blue_binary = blue_color.toString(2);
 }
 binary_converter();
 
-
-function getColor() {
-var hex = parseInt(red_binary, 2).toString(16).toUpperCase();
-var hexa = parseInt(green_binary, 2).toString(16).toUpperCase();
-var hexad = parseInt(blue_binary, 2).toString(16).toUpperCase();
-
+function getColor() { //Aidan and O
+var hex = parseInt(red_binary, 2).toString(16).toUpperCase(); //Aidan and ☐
+var hexa = parseInt(green_binary, 2).toString(16).toUpperCase(); //Aidan and ☐
+var hexad = parseInt(blue_binary, 2).toString(16).toUpperCase(); //Aidan and ☐
 if (red_color < 16) {
   var hex = 0+hex;
 }
@@ -78,11 +77,11 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 getColor();
 
-function changeBackground() {
-var first = parseInt(red_binary, 2).toString(16).toUpperCase();
-var second = parseInt(green_binary, 2).toString(16).toUpperCase();
-var third = parseInt(blue_binary, 2).toString(16).toUpperCase();
 
+function changeBackground() { //Aidan and O
+var first = parseInt(red_binary, 2).toString(16).toUpperCase(); //Aidan and ☐
+var second = parseInt(green_binary, 2).toString(16).toUpperCase(); //Aidan and ☐
+var third = parseInt(blue_binary, 2).toString(16).toUpperCase(); //Aidan and ☐
 if (red_color < 16) {
   var first = 0+first;
 }
