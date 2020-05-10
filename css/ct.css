@@ -1,23 +1,23 @@
-h1 {
+h1 { //Afonso
   text-align: center;
   text-shadow: 2.5px 2.5px black;
 	color: blue;
 }
 
-h3, h5 {
+h3, h5 { //Afonso
   text-align: center;
   font-family: "Comic Sans MS"
 }
 
-body {
+body { //Afonso
   background-color: lightblue;
 }
 
-#canvas {
+#canvas { //Aidan
   border-radius: 50px;
 }
 
-canvas {
+canvas { //Aidan
   display: block;
   margin-bottom: 20px;
   margin-top: 20px;
