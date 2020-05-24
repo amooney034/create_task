@@ -12,7 +12,7 @@ var green_color = window.prompt("Enter the green value integer 0-255");
 var blue_color = window.prompt("Enter the blue value integer 0-255");
 
 
-function checker() { //Algorithm not by me
+function checker() {
 if ((red_color > max) || (red_color < min) || (red_color % 1 !==0) || (Number.isNaN (red_color))) {
   window.alert("Something is off with your red value.");
 }
@@ -29,22 +29,22 @@ checker();
 
 
 
-function binary_converter() { //Algorithm not by me
-red_color = Number(red_color); ////Abstraction not by me
+function binary_converter() {
+red_color = Number(red_color);
 red_binary = red_color.toString(2);
 
-green_color = Number(green_color); //Abstraction not by me
+green_color = Number(green_color);
 green_binary = green_color.toString(2);
 
-blue_color = Number(blue_color); ////Abstraction not by me
+blue_color = Number(blue_color);
 blue_binary = blue_color.toString(2);
 }
 binary_converter();
 
-function getColor() {
-var hex = parseInt(red_binary, 2).toString(16).toUpperCase();
-var hexa = parseInt(green_binary, 2).toString(16).toUpperCase();
-var hexad = parseInt(blue_binary, 2).toString(16).toUpperCase();
+function getColor() { //ALgorithm not don't by me
+var hex = parseInt(red_binary, 2).toString(16).toUpperCase(); //Abstraction not don't by me
+var hexa = parseInt(green_binary, 2).toString(16).toUpperCase();//Abstraction not don't by me
+var hexad = parseInt(blue_binary, 2).toString(16).toUpperCase();//Abstraction not don't by me
 if (red_color < 16) {
   var hex = 0+hex;
 }
@@ -78,10 +78,10 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 getColor();
 
 
-function changeBackground() {
-var first = parseInt(red_binary, 2).toString(16).toUpperCase();
-var second = parseInt(green_binary, 2).toString(16).toUpperCase();
-var third = parseInt(blue_binary, 2).toString(16).toUpperCase();
+function changeBackground() { //Algorithm not don't by me
+var first = parseInt(red_binary, 2).toString(16).toUpperCase();//Abstraction not don't by me
+var second = parseInt(green_binary, 2).toString(16).toUpperCase(); //Abstraction not don't by me
+var third = parseInt(blue_binary, 2).toString(16).toUpperCase(); //Abstraction not don't by me
 if (red_color < 16) {
   var first = 0+first;
 }
